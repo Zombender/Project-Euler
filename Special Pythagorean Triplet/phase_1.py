@@ -8,6 +8,12 @@ b = sqr(2uv)+v
 c = sqr(2uv)+u+v
 
 GCD(u,v) = 1 # u and v are coprimes
+
+a , b , c
+a^2+b^2=c^2
+a<b<c
+
+3^2+4^2 = 5^2
 '''
 def gcd(a: int,b: int): 
     if a == 0:
