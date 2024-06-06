@@ -22,6 +22,6 @@ def prime_position(position:int):
     return prime_number
 
 
-print(prime_position(1000000))
+print(prime_position(4))
 
 
