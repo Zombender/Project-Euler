@@ -59,7 +59,6 @@ def calculate_vertically(grid) ->int: #20*4 grid
     return largest_product
 
 def calculate_left_diagonally(grid) ->int: #20*4 grid:
-    
     pass
 
 def calculate_product_in_grid(grid):
