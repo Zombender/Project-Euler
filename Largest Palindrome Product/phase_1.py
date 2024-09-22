@@ -1,3 +1,5 @@
+#File lost, I will do it in the future
+
 def define_range(number: int):
     range_q = 1
     for i in range(number):

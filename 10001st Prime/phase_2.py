@@ -2,7 +2,7 @@ def is_prime(number:int):
     if number == 1:return False
     elif number  < 4: return True
     elif number %2 == 0: return False
-    elif number <9 : return True
+    elif number < 9 : return True
     elif number %3 == 0: return False
     sqr = round(number**0.5)
     f= 5
@@ -23,5 +23,6 @@ def prime_position(position:int):
 
 
 print(prime_position(4))
+print(is_prime(9967))
 
 
