@@ -1,4 +1,4 @@
-def F(number_digits):
+def fibonacci_digits(number_digits):
     index = 1
     n,n_2 = 0,1
     while len(str(n)) <number_digits:
@@ -6,4 +6,4 @@ def F(number_digits):
         index+=1
     return index-1
 
-print(F(1000))
+print(fibonacci_digits(1000))
