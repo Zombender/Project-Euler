@@ -48,3 +48,13 @@ class MathHelper():
                 factors.append(i)
                 factors.append(int(number/i))
         return set(filter(lambda x : x<=number//2,factors))
+    
+    @staticmethod
+    def palindrome(number:str):
+        len_number = len(number)
+        left = number[:len_number//2]
+        if len_number %2 == 0:
+            right = number[len_number//2:]
+        else:
+            right = number[len_number//2+1:]
+        return left == right[::-1]

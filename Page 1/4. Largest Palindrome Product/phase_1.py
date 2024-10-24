@@ -13,7 +13,11 @@ def palindrome(number:int):
     number_str = str(number)
     len_number = int(len(number_str)/2)
     left = number_str[:len_number]
-    right = number_str[len_number:]
+    if len_number %2 == 0:
+        right = number_str[len_number:]
+    else:
+        right = number_str[len_number+1:]
+    print(left,right)
     if left == right[::-1]:
         return True
     return False
