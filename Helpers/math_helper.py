@@ -22,6 +22,7 @@ class MathHelper():
         for i in array:
             result *=i
         return result
+    
     @staticmethod
     def gcd(a: int,b: int)->int: 
         if a == 0:
@@ -58,3 +59,15 @@ class MathHelper():
         else:
             right = number[len_number//2+1:]
         return left == right[::-1]
+    
+    def is_pandigital(number:str):
+        one_to_nine:str = ''.join([str(num) for num in range(1,10)])
+        number = ''.join(sorted(number))
+        if one_to_nine == number:
+            return True
+        return False
+
+
+if __name__ == '__main__':
+    is_pandigital = MathHelper.is_pandigital('918273645')
+    print(is_pandigital)

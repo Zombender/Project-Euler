@@ -40,5 +40,5 @@ def map_names(name,pos):
     return sum_char_name * pos
 
 
-file = 'Names Scores/0022_names.txt'
+file = r'Page 1\22. Names Scores\0022_names.txt'
 names_scores(file)
